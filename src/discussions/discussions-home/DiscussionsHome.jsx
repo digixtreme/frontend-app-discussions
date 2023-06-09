@@ -83,7 +83,7 @@ export default function DiscussionsHome() {
       learnerUsername,
     }}
     >
-      {!inContext && <Header courseOrg={org} courseNumber={courseNumber} courseTitle={courseTitle} />}
+      {/*!inContext && <Header courseOrg={org} courseNumber={courseNumber} courseTitle={courseTitle} />*/}
       <main className="container-fluid d-flex flex-column p-0 w-100" id="main" tabIndex="-1">
         {!inContext && <CourseTabsNavigation activeTab="discussion" courseId={courseId} />}
         <div
@@ -126,7 +126,7 @@ export default function DiscussionsHome() {
           )}
         </div>
       </main>
-      {!inContext && <Footer />}
+      {/*!inContext && <Footer />*/}
     </DiscussionContext.Provider>
   );
 }
