@@ -1,0 +1,15 @@
+.d2l-mfe-discussion {
+    /*Hide Header, Footer*/
+    .learning-header,
+    .footer {
+        display: none !important;
+    }
+
+    .course-tabs-navigation {
+        display:none !important;
+    }
+
+    .usabilla-live-button {
+        display:none !important
+    }
+}

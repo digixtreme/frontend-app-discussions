@@ -19,11 +19,17 @@ import store from './store';
 
 import './assets/favicon.ico';
 import './index.scss';
+import './custom.scss';
 
 subscribe(APP_READY, () => {
+  let clsName = "";
+  if(window !== undefined && window.name !== undefined && window.name === "edx_lms")
+    clsName = "d2l-mfe-discussion"
   ReactDOM.render(
     <AppProvider store={store}>
-      <DiscussionsHome />
+      <div className={`${clsName}`}>
+          <DiscussionsHome />
+      </div>
     </AppProvider>,
     document.getElementById('root'),
   );
